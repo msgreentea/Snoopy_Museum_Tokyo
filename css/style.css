@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #3a3a3a;
   letter-spacing: 2px;
+  line-height: 30px;
 }
 a,
 li {
@@ -18,11 +19,11 @@ li {
   padding: 0 80px 0 160px;
 }
 button {
-  background-color: #E18B9C;
+  background-color: #e18b9c;
   border: none;
-  padding: 10px 50px;
-  border-radius: 20px;
-  color:white;
+  padding: 5px 50px;
+  border-radius: 30px;
+  color: white;
   transition: 0.7s;
 }
 button:hover {
@@ -89,23 +90,24 @@ dl {
   display: flex;
   flex-wrap: wrap;
 }
-dt, dd {
-  padding:20px 0;
-  border-top: 0.5px solid #F6F5F3;
+dt,
+dd {
+  padding: 20px 0;
+  border-top: 0.5px solid #f6f5f3;
   font-size: 14px;
 }
 dt {
-  width:15%;
+  width: 15%;
 }
 dd {
-  width:85%;
+  width: 85%;
 }
 
 /* contents */
 
 .contents {
   /* background-color: sandybrown; */
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 105px;
@@ -114,19 +116,20 @@ dd {
   position: relative;
   /* background-color: #444; */
   margin-bottom: 30px;
-  width:350px;
-  height:350px;
+  width: 350px;
+  height: 350px;
   border-radius: 30px;
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2), inset 0 0 200px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2),
+    inset 0 0 200px rgba(0, 0, 0, 0.2);
 }
-.content img{
+.content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
 }
 .content-texts {
-  position :absolute;
+  position: absolute;
   bottom: 20%;
   left: 10%;
 }
@@ -141,7 +144,7 @@ dd {
 }
 .content-span {
   font-size: 32px;
-  color: #E60020;
+  color: #e60020;
   font-weight: bold;
 }
 .content:hover {
@@ -158,12 +161,39 @@ dd {
 /* ticket */
 
 .ticket {
-  background-color: #F6F5F3;
+  padding: 100px 80px 200px 160px;
+  background-color: #f6f5f3;
 }
 .ticket-gray {
   color: gray;
 }
 .ticket_shaped_container {
   background: white;
-  margin-top: 105px;
+  display: flex;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.ticket-left {
+  width: 30%;
+}
+.left {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+.ticket-right {
+  width: 70%;
+}
+
+/* access */
+.access {
+  position: relative;
+  padding-top: 485px;
+}
+.access img {
+  position: absolute;
+  top: 0;
 }
