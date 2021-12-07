@@ -14,7 +14,7 @@
   <header id="header" class="">
     <nav>
       <ul>
-        <li class="nav-list"><a href="#"><img src="./" alt=""></a></li>
+        <li class="nav-list"><a href=""><img src="./img/snoopy.svg" alt="back_to_home" class="snoopy-icon"></a></li>
         <li class="nav-list"><a href="">MENU<img src="" alt=""></a></li>
         <li class="nav-list"><a href=""><img src="" alt="">TICKET</a></li>
         <li class="nav-list"></li>
@@ -29,26 +29,26 @@
     <img src="./img/symbol.svg" alt="">
   </div>
   <!-- info -->
-  <div class="info container">
+  <div class="info">
     <div class="info-green info-item">
-      <p class="info-text-left">重要なお知らせ</p>
-      <p class="info-text-right"><a href="">【感染症対策について】</a></p>
+      <p class="info-text info-text-left">重要なお知らせ</p>
+      <p class=" info-text-right"><a class="info-text" href="">【感染症対策について】</a></p>
     </div>
     <div class="info-black info-item">
-      <p class="info-text-left">当日券情報</p>
-      <p class="info-text-right">12月4日は、10:30頃より当日券を販売します。</p>
+      <p class="info-text info-text-left">当日券情報</p>
+      <p class="info-text info-text-right"><a class="info-text" href="">12月4日は、10:30頃より当日券を販売します。</a></p>
     </div>
   </div>
   <!-- news -->
   <section class="news container">
     <h2 class="section-title">NEWS</h2>
-    <dl>
-      <dt>2021.12.03</dt>
-      <dd><a href="">次回企画展は「しあわせは、みんなの笑顔」に決定しました。</a></dd>
-      <dt>2021.12.03</dt>
-      <dd><a href="">展示入替期間の「ベリー・ハッピー・ホーム」について</a></dd>
-      <dt>2021.12.02</dt>
-      <dd><a href="">Snoopy Museum Online リニューアルに伴うクローズについて</a></dd>
+    <dl class="news-dl">
+      <dt class="news-dt">2021.12.03</dt>
+      <dd class="news-dd"><a href="">次回企画展は「しあわせは、みんなの笑顔」に決定しました。</a></dd>
+      <dt class="news-dt">2021.12.03</dt>
+      <dd class="news-dd"><a href="">展示入替期間の「ベリー・ハッピー・ホーム」について</a></dd>
+      <dt class="news-dt">2021.12.02</dt>
+      <dd class="news-dd"><a href="">Snoopy Museum Online リニューアルに伴うクローズについて</a></dd>
     </dl>
   </section>
   <!-- contents -->
@@ -60,6 +60,12 @@
         <div class="content-texts">
           <h3 class="content-title">GALLERY</h3>
           <p class="content-text">常設店・企画展</p>
+        </div>
+        <div class="content-hover-texts">
+
+
+          常設展・企画展
+          緑豊かな環境の中で、約2倍の広さに生まれ変わるスヌーピーミュージアム。コミック「ピーナッツ」の美しい原画の企画展示をはじめ、作者チャールズ・シュルツや「ピーナッツ」について、そしてスヌーピーやチャーリー・ブラウンら個性豊かな登場人物たちについて、映像や立体物などを駆使した体験型の展示でご紹介します。
         </div>
       </a>
       <a href="" class="content">
@@ -100,45 +106,47 @@
       </a>
     </div>
   </section>
-  <!-- TICKET -->
-  <section class="ticket container">
-    <div class="ticket_shaped_container">
-      <div class="ticket-left">
-        <h2 class="section-title">TICKET</h2>
-        <button>詳細を見る</button>
+  <div class="ticket_access">
+    <!-- TICKET -->
+    <section class="ticket container">
+      <div class="ticket_shaped_container">
+        <div class="ticket-left">
+          <h2 class="section-title">TICKET</h2>
+          <button>詳細を見る</button>
+        </div>
+        <div class="right ticket-right">
+          <span class="ticket-gray">前売券</span>
+          <p>日時指定制です。イープラスで来館希望日の前日まで購入できます。</p>
+          <span class="ticket-gray">当日券</span>
+          <p>当日券は館内の滞留人数に余裕のある場合のみ、オンラインおよび現地にて販売します。販売状況は公式サイトのチケットのページでご確認ください。</p>
+        </div>
       </div>
-      <div class="left ticket-right">
-        <span class="ticket-gray">前売券</span>
-        <p>日時指定制です。イープラスで来館希望日の前日まで購入できます。</p>
-        <span class="ticket-gray">当日券</span>
-        <p>当日券は館内の滞留人数に余裕のある場合のみ、オンラインおよび現地にて販売します。販売状況は公式サイトのチケットのページでご確認ください。</p>
+    </section>
+    <!-- access -->
+    <section class="access container">
+      <img src="./img/img_access_top.png" alt="" width="980px">
+      <div class="access-left">
+        <h2 class="section-title">ACCESS</h2>
+        <button>アクセス情報を見る</button>
       </div>
-    </div>
-  </section>
-  <!-- access -->
-  <div class="access container">
-    <img src="./img/img_access_top.png" alt="" width="980px">
-    <div class="left access-left">
-      <h2 class="section-title">ACCESS</h2>
-      <button>アクセス情報を見る</button>
-    </div>
-    <div class="access-right">
-      <dl>
-        <dt>住所</dt>
-        <dd>東京都町田市鶴間3-1-1</dd>
-        <dt>電話番号</dt>
-        <dd>042-812-2723</dd>
-        <dt>営業時間</dt>
-        <dd>10:00-18:00（入場は17:30まで）<br>
-          年中無休（2022年1月1日、2月15日は休館）</dd>
-      </dl>
-      <div class="access-right-texts">
-        <p>※ミュージアム専用の駐車場はありません。</p>
-        <p>※グランベリーパークの駐車場サービスは対象外です。</p>
-        <a href="">お問い合わせはこちら</a>
+      <div class="access-right">
+        <dl>
+          <dt>住所</dt>
+          <dd>東京都町田市鶴間3-1-1</dd>
+          <dt>電話番号</dt>
+          <dd>042-812-2723</dd>
+          <dt>営業時間</dt>
+          <dd>10:00-18:00（入場は17:30まで）<br>
+            年中無休（2022年1月1日、2月15日は休館）</dd>
+        </dl>
+        <div class="access-right-texts">
+          <p>※ミュージアム専用の駐車場はありません。</p>
+          <p>※グランベリーパークの駐車場サービスは対象外です。</p>
+          <a href="">お問い合わせはこちら</a>
+        </div>
       </div>
-    </div>
-    <a href="" class="google_map">Google Map</a>
+      <a href="" class="google_map">Google Map</a>
+    </section>
   </div>
   <!-- footer -->
   <footer id="footer" class="footer container">
