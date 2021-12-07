@@ -248,6 +248,17 @@ header nav {
 .access-right {
   width: 60%;
 }
+.access-dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.access-dt {
+  font-weight: bold;
+  width: 20%;
+}
+.access-dd {
+  width: 80%;
+}
 
 /* footer */
 
