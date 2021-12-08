@@ -3,7 +3,7 @@
   font-family: sans-serif, "zeitung";
   box-sizing: border-box;
   color: #3a3a3a;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 30px;
 }
 a,
@@ -35,7 +35,7 @@ button:hover {
   transform: translate(0, -5px);
 }
 .underline {
-  padding-bottom: 7px;
+  /* padding-bottom: 7px; */
   border-bottom: 1px solid #3a3a3a;
 }
 
@@ -65,6 +65,67 @@ header nav {
   display: block;
   padding: 35px 0;
   border-bottom: 1px dashed black;
+}
+
+/* menu */
+
+.menu {
+  display: inline-block;
+  width:20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu_line-top, .menu_line-middle, .menu_line-bottom {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #3a3a3a;
+  position: absolute;
+  /* top: 60px; */
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.nav-hamburger {
+  /* position: absolute; */
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  left: -100%;
+  background: #3a3a3a;
+  transition: 0.5s;
+  /* display: flex; */
+}
+.nav-hamburger .section-title,
+.nav-hamburger .section-subtitle {
+  color: white;
+}
+ /* edit hamburger */
+.menu_line-top {
+  top: 0;
+}
+.menu_line-middle {
+  top: 8px;
+}
+.menu_line-bottom {
+  bottom: 0;
+}
+.menu span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.in {
+  /* 左から右に移動させる */
+  transform: translateX(100%);
 }
 
 /* mainvisual */
@@ -159,6 +220,9 @@ header nav {
   /* hover時の動作試行錯誤 */
   overflow: hidden;
 }
+.content::after {
+
+}
 .content img {
   width: 100%;
   height: 100%;
@@ -206,6 +270,7 @@ header nav {
 /* to stick img of map */
 .ticket_access {
   position: relative;
+  padding-bottom: 105px;
 }
 
 /* ticket */
@@ -221,7 +286,6 @@ header nav {
   background: white;
   display: flex;
   padding: 50px;
-  border: 1px solid black;
   border-radius: 30px;
 }
 .ticket-left {
