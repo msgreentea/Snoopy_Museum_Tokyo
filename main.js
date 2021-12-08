@@ -1,15 +1,15 @@
 // js
-const target = document.getElementById("menu");
-target.addEventListener('click', () => {
-  target.classList.toggle('open');
-  const nav = document.getElementById("nav-hamburger");
-  nav.classList.toggle('in');
-});
+// const target = document.getElementById("menu");
+// target.addEventListener('click', () => {
+//   target.classList.toggle('open');
+//   const nav = document.getElementById("nav-hamburger");
+//   nav.classList.toggle('in');
+// });
 
 // jquery たぶん↓をhtmlで読み込む
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
 $('.menu').on('click', function () {
-  $('.menu__line').toggleClass('active');
+  $('.menu-line').toggleClass('active');
   $('.gnav').fadeToggle();
   $('.drawer').drawer('close');
 
