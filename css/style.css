@@ -220,9 +220,6 @@ header nav {
   /* hover時の動作試行錯誤 */
   overflow: hidden;
 }
-.content::after {
-
-}
 .content img {
   width: 100%;
   height: 100%;
@@ -252,19 +249,40 @@ header nav {
   background-color: #519b60;
   border-radius: 30px;
   transition: 0.3s;
+  background-image: none;
 }
 /* ホバー時の動作指定したい */
-.content-hover-texts {
+.content-gallery:hover::after {
+  content: '常設展・企画展
+          緑豊かな環境の中で、約2倍の広さに生まれ変わるスヌーピーミュージアム。コミック「ピーナッツ」の美しい原画の企画展示をはじめ、作者チャールズ・シュルツや「ピーナッツ」について、そしてスヌーピーやチャーリー・ブラウンら個性豊かな登場人物たちについて、映像や立体物などを駆使した体験型の展示でご紹介します。';
 }
-.content:hover .content-hover-texts {
-  overflow: visible;
+
+
+.content-hover-texts {
+  display: none;
+}
+.content-hover-texts:hover {
+  display: static;
 }
 
 /* 画像を表示させたい */
 .content-gallery {
-  background: url("../img/img_contents_gallery_mb.jpg") cover;
-  height: 350px;
-  width: 350px;
+  background: url("../img/img_contents_gallery_mb.jpg");
+}
+.content-online_museum {
+  background: url("../img/img_contents_online_mb.jpg");
+}
+.content-store {
+  background: url("../img/img_contents_store_mb.jpg");
+}
+.content-cafe {
+  background: url("../img/img_contents_cafe_mb_2.jpg")center;
+}
+.content-workshop {
+  background: url("../img/img_contents_workshop_mb.jpg")no-repeat;
+}
+.content-finding {
+  background: url("../img/img_contents_app_mb.jpg") no-repeat;
 }
 
 /* to stick img of map */
