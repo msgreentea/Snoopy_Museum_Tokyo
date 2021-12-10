@@ -1,27 +1,41 @@
-// js
-// const target = document.getElementById("menu");
-// target.addEventListener('click', () => {
-//   target.classList.toggle('open');
-//   const nav = document.getElementById("nav-hamburger");
-//   nav.classList.toggle('in');
-// });
-
-// jquery たぶん↓をhtmlで読み込む
-
-$('.menu').on('click', function () {
-  $('.menu-line').toggleClass('active');
-  $('.gnav').fadeToggle();
-  $('.drawer').drawer('close');
-
-  $('#nav a').on('click', function () {
-    $('#nav').toggleClass('active');
-    $(".menu").toggleClass('active');
-  })
-
+// ドロワーメニュー
+const target = document.getElementById('menu');
+target.addEventListener('click', () => {
+  target.classList.toggle('open');
+  const nav = document.getElementById("nav-hamburger");
+  nav.classList.toggle('in');
 });
-//   ↓ hrefの値が#から始まるa要素
-$('a[href^="#"]').on('click', function () {
-  $('.menu').click(); // .menuをクリックした時と同じ処理
 
-  return false; //a要素のリンク先移動防ぐ
-});
+
+// トップへ戻るボタン
+
+function scrollTop(elem) {
+  const target = document.getElementById(elem);
+  target.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+scrollTop('scroll-top');
+
+
+
+
+// function scrollTop('#scroll_top');
+// scroll_top.addEventListener('click', scroll_top);
+// function scroll_top() {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth"
+//   });
+// };
+
+// window.addEventListener('scroll', scroll_top);
+// if (window.pageYOffset > 3550) {
+//   scroll_top.style.opacity = '1';
+// } else {
+//   scroll_top.style.opacity = '0';
+// };

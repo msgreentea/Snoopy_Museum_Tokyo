@@ -1,6 +1,5 @@
-/* 共通 */
 * {
-  font-family: sans-serif, "zeitung";
+  font-family: 'Noto Sans Japanese', sans-serif, "zeitung";
   box-sizing: border-box;
   color: #3a3a3a;
   letter-spacing: 1px;
@@ -13,7 +12,7 @@ dt,
 dd {
   text-decoration: none;
   list-style: none;
-  font-size: 15px;
+  font-size: 14px;
 }
 .section-title {
   font-size: 42px;
@@ -58,24 +57,42 @@ header nav {
 }
 
 .nav-list {
-  font-size: 14px;
   font-weight: bold;
+  text-align: center;
+}
+.nav-list a {
+  font-size: 12px;
+}
+.list-item {
+  border-bottom: 2px dotted black;
+  padding: 35px 0;
 }
 .snoopy-icon {
   margin: 0 auto;
   display: block;
-  padding: 35px 0;
-  border-bottom: 1px dashed black;
+}
+.menu_ticket {
+  height: 200px;
+  padding: 50px 0;
+}
+.fa-ticket-alt {
+  transform: rotate(45);
+}
+.sns {
+  height: 100px;
+  cursor: pointer;
+}
+.en {
+  padding: 20px 0;
 }
 
 /* menu */
 
 .menu {
-  display: inline-block;
-  width: 20px;
   height: 20px;
   cursor: pointer;
   position: relative;
+  width: 20px;
 }
 
 .menu_line-top,
@@ -85,27 +102,24 @@ header nav {
   width: 100%;
   height: 2px;
   background-color: #3a3a3a;
-  position: absolute;sss
-  /* top: 60px; */
+  position: absolute;
   transition: 0.5s;
-  z-index: 2;
 }
 
 .nav-hamburger {
-  /* position: absolute; */
-  display: none;
+  position: absolute;
+  /* display: none; */
   height: 100vh;
   width: 100vw;
   left: -100%;
   background: #3a3a3a;
   transition: 0.5s;
-  /* display: flex; */
 }
 .nav-hamburger .section-title,
 .nav-hamburger .section-subtitle {
   color: white;
 }
-/* edit hamburger */
+
 .menu_line-top {
   top: 0;
 }
@@ -148,7 +162,7 @@ header nav {
 
 .info {
   display: block;
-  width: 100vw;
+  width: 100%;
 }
 .info-item {
   display: flex;
@@ -194,9 +208,6 @@ header nav {
 .news-dd:last-child {
   border-bottom: 0.5px solid #f6f5f3;
 }
-
-/* dtの最後border-bottom効いてくれない */
-
 .news-dt {
   width: 15%;
 }
@@ -220,14 +231,7 @@ header nav {
   border-radius: 30px;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2),
     inset 0 0 200px rgba(0, 0, 0, 0.2);
-  /* hover時の動作試行錯誤 */
-  overflow: hidden;
 }
-<<<<<<< HEAD
-=======
-.content::after {
-}
->>>>>>> 7277b815d355f6df3b0acb646b6bc79b5c0a9843
 .content img {
   width: 100%;
   height: 100%;
@@ -256,16 +260,9 @@ header nav {
 .content:hover {
   background-color: #519b60;
   border-radius: 30px;
-  transition: 0.3s;
+  transition: 0.5s;
   background-image: none;
 }
-/* ホバー時の動作指定したい */
-.content-gallery:hover::after {
-  content: '常設展・企画展
-          緑豊かな環境の中で、約2倍の広さに生まれ変わるスヌーピーミュージアム。コミック「ピーナッツ」の美しい原画の企画展示をはじめ、作者チャールズ・シュルツや「ピーナッツ」について、そしてスヌーピーやチャーリー・ブラウンら個性豊かな登場人物たちについて、映像や立体物などを駆使した体験型の展示でご紹介します。';
-}
-
-
 .content-hover-texts {
   display: none;
 }
@@ -307,6 +304,7 @@ header nav {
 }
 .ticket-gray {
   color: gray;
+  font-size: 14px;
 }
 .ticket_shaped_container {
   background: white;
@@ -319,7 +317,6 @@ header nav {
 }
 .left {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -336,7 +333,6 @@ header nav {
 }
 .access img {
   position: absolute;
-  /* top: 29%; */
   top: 35%;
   left: 15%;
 }
@@ -362,14 +358,46 @@ header nav {
   color: #e18b9c;
   border-bottom: 1px solid #e18b9c;
 }
-.google_map {
+.button-google_map {
   background-color: #e18b9c;
+  color: white;
   display: inline-block;
   width: 170px;
-  height: 150px;
-  border-radius: 100px;
-  align-items: center;
+  height: 170px;
+  border-radius: 50%;
   text-align: center;
+  line-height: 150px;
+  align-items: center;
+  position: absolute;
+  top: 950px;
+  left: 1100px;
+}
+
+/* peppermint patty */
+
+.scroll-top {
+  position: fixed;
+  width: 110px;
+  right: -25px;
+  bottom: 200px;
+  cursor: pointer;
+  /* opacity: 1;
+  transition-duration: 0.5s; */
+}
+.scroll-top.show {
+  opacity: 0.6;
+  transform: none;
+}
+.scroll-top img {
+  position: relative;
+  display: block;
+  width: 110px;
+}
+.scroll-top p {
+  font-weight:bold;
+  position: absolute;
+  font-size: 12px;
+  top: 0;
 }
 
 /* footer */

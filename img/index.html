@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="./img/favicons.png">
   <title>SNOOPY MUSEUM TOKYO</title>
 </head>
 
@@ -16,16 +15,16 @@
   <header id="header" class="">
     <nav class="header-nav">
       <ul>
-        <li class="nav-list list-item"><a href=""><img src="./img/snoopy.svg" alt="back_to_home"
-              class="snoopy-icon"></a></li>
-        <li class="nav-list menu_ticket">
-          <a id="menu" class="menu">
-            <span class="menu_line-top"></span>
-            <span class="menu_line-middle"></span>
-            <span class="menu_line-bottom"></span>
+        <li class="nav-list"><a href=""><img src="./img/snoopy.svg" alt="back_to_home" class="snoopy-icon"></a></li>
+        <li class="nav-list menu">
+          <!-- <a href="">MENU<img src="" alt=""></a> -->
+          <a href="" id="menu">
+            <span class="menu-line menu_line-top"></span>
+            <span class="menu-line menu_line-middle"></span>
+            <span class="menu-line menu_line-bottom"></span>
             <br>MENU
           </a>
-          <nav id="nav-hamburger" class="nav-hamburger">
+          <nav id="nav-hamburger" class="nav-hamburger container">
             <ul>
               <li>
                 <a href="">
@@ -102,15 +101,11 @@
             </ul>
           </nav>
         </li>
-        <li class="nav-list list-item"><a href="#"><i class="fas fa-ticket-alt fa-2x"></i>TICKET</a></li>
-        <li class="nav-list list-item">
-          <ul class="sns">
-            <li class="sns-item"><i class="fab fa-instagram"></i></li>
-            <li class="sns-item"><i class="fab fa-facebook-square"></i></li>
-            <li class="sns-item"><i class="fab fa-twitter"></i></li>
-          </ul>
-        </li>
-        <li class="nav-list en"><a href="">EN</a></li>
+        <li class="nav-list"><a href=""><img src="" alt="">TICKET</a></li>
+        <li class="nav-list"></li>
+        <li class="nav-list"></li>
+        <li class="nav-list"></li>
+        <li class="nav-list"><a href="">EN</a></li>
       </ul>
     </nav>
   </header>
@@ -122,11 +117,11 @@
   <div class="info">
     <div class="info-green info-item">
       <p class="info-text info-text-left">重要なお知らせ</p>
-      <p class="info-text-right"><a class="info-text" href="">【感染症対策について】</a></p>
+      <p class=" info-text-right"><a class="info-text" href="">【感染症対策について】</a></p>
     </div>
     <div class="info-black info-item">
       <p class="info-text info-text-left">当日券情報</p>
-      <p class="info-text info-text-right"><a class="info-text" href="">12月10日は、10:30頃より当日券を販売します。</a></p>
+      <p class="info-text info-text-right"><a class="info-text" href="">12月4日は、10:30頃より当日券を販売します。</a></p>
     </div>
   </div>
   <!-- news -->
@@ -146,12 +141,18 @@
     <h2 class="section-title">CONTENTS</h2>
     <div class="contents">
       <a href="#" class="content content-gallery">
+        <!-- <img src="./img/img_contents_gallery_mb.jpg" alt=""> -->
         <div class="content-texts">
           <h3 class="content-title">GALLERY</h3>
           <p class="content-text">常設店・企画展</p>
         </div>
+        <div class="content-hover-texts">
+          常設展・企画展
+          緑豊かな環境の中で、約2倍の広さに生まれ変わるスヌーピーミュージアム。コミック「ピーナッツ」の美しい原画の企画展示をはじめ、作者チャールズ・シュルツや「ピーナッツ」について、そしてスヌーピーやチャーリー・ブラウンら個性豊かな登場人物たちについて、映像や立体物などを駆使した体験型の展示でご紹介します。
+        </div>
       </a>
       <a href="#" class="content content-online_museum">
+        <!-- <img src="./img/img_contents_online_mb.jpg" alt=""> -->
         <div class="content-texts">
           <span class="content-span">NEW!</span>
           <h3 class="content-title">ONLINE<br>MUSEUM</h3>
@@ -159,27 +160,31 @@
         </div>
       </a>
       <a href="#" class="content content-store">
+        <!-- <img src="./img/img_contents_store_mb.jpg" alt=""> -->
         <div class="content-texts">
           <h3 class="content-title">STORE</h3>
           <p class="content-text">ストア</p>
         </div>
       </a>
       <a href="#" class="content content-cafe">
+        <!-- <img src="./img/img_contents_cafe_mb_2.jpg" alt=""> -->
         <div class="content-texts">
           <h3 class="content-title">CAFE</h3>
           <p class="content-text">カフェ</p>
         </div>
       </a>
       <a href="#" class="content content-workshop">
+        <!-- <img src="./img/img_contents_workshop_mb.jpg" alt=""> -->
         <div class="content-texts">
           <h3 class="content-title">WORKSHOP</h3>
           <p class="content-text">ワークショップ</p>
         </div>
       </a>
       <a href="" class="content content-finding">
+        <!-- <img src="./img/img_contents_app_mb.jpg" alt=""> -->
         <div class="content-texts">
           <h3 class="content-title">FINDING<br>SNOOPY!</h3>
-          <p class="content-text">スヌーピーを探せ!</p>
+          <p class="content-text">スヌーピーを探せ！</p>
         </div>
       </a>
     </div>
@@ -223,14 +228,13 @@
           <a href="#" class="underline access-link">お問い合わせはこちら</a>
         </div>
       </div>
-      <button href="#" class="button-google_map">Google Map</button>
+      <a href="#" class="google_map">Google Map</a>
     </section>
   </div>
   <!-- peppermint-patty -->
   <div class="top">top</div>
   <div class=""></div>
   <a class="scroll-top" id="scroll-top">
-    <p>BACK TO TOP</p>
     <img src="./img/peppermint_patty.svg" alt="">
   </a>
   <!-- footer -->
