@@ -46,13 +46,12 @@ header {
   flex-flow: column;
   position: fixed;
   top: 0;
-  z-index: 7;
   width: 80px;
 }
-header nav {
+.header-nav {
   display: block;
   height: 100vh;
-  margin: 0 auto;
+  z-index: 7;
   /* width: 80%; */
 }
 
