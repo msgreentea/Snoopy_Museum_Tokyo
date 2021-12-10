@@ -1,5 +1,5 @@
 * {
-  font-family: 'Noto Sans Japanese', sans-serif, "zeitung";
+  font-family: "Noto Sans Japanese", sans-serif, "zeitung";
   box-sizing: border-box;
   color: #3a3a3a;
   letter-spacing: 1px;
@@ -71,7 +71,8 @@ header {
   display: block;
 }
 .menu_ticket {
-  height: 200px;
+  /* height: 200px; */
+  height: 300px;
   padding: 50px 0;
 }
 .fa-ticket-alt {
@@ -107,7 +108,7 @@ header {
 
 .nav-hamburger {
   position: absolute;
-  /* display: none; */
+  display: none;
   height: 100vh;
   width: 100vw;
   left: -100%;
@@ -148,13 +149,26 @@ header {
 
 .mainvisual {
   height: 100vh;
-  padding-top: 15vh;
+  padding-top: 168px;
   background-color: #f6f5f3;
 }
 .mainvisual img {
   display: block;
   margin: 0 auto;
   width: 220px;
+}
+
+/* シュルツさん */
+
+.new {
+  position: fixed;
+  z-index: 8;
+  bottom: 30px;
+  right: 30px;
+  /* box-shadow: 5px 10px 0 0 black; */
+}
+.new img {
+  width: 180px;
 }
 
 /* info */
@@ -269,7 +283,6 @@ header {
   display: static;
 }
 
-/* 画像を表示させたい */
 .content-gallery {
   background: url("../img/img_contents_gallery_mb.jpg");
 }
@@ -280,16 +293,17 @@ header {
   background: url("../img/img_contents_store_mb.jpg");
 }
 .content-cafe {
-  background: url("../img/img_contents_cafe_mb_2.jpg")center;
+  background: url("../img/img_contents_cafe_mb_2.jpg") center;
 }
 .content-workshop {
-  background: url("../img/img_contents_workshop_mb.jpg")no-repeat;
+  background: url("../img/img_contents_workshop_mb.jpg") no-repeat;
 }
 .content-finding {
   background: url("../img/img_contents_app_mb.jpg") no-repeat;
 }
 
 /* to stick img of map */
+
 .ticket_access {
   position: relative;
   padding-bottom: 105px;
@@ -393,7 +407,7 @@ header {
   width: 110px;
 }
 .scroll-top p {
-  font-weight:bold;
+  font-weight: bold;
   position: absolute;
   font-size: 12px;
   top: 0;
