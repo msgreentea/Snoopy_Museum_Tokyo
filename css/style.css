@@ -108,12 +108,18 @@ header {
 
 .nav-hamburger {
   position: absolute;
-  display: none;
   height: 100vh;
   width: 100vw;
   left: -100%;
   background: #3a3a3a;
   transition: 0.5s;
+}
+.nav-hamburger ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-hambureger ul li {
+  padding: 70px 0;
 }
 .nav-hamburger .section-title,
 .nav-hamburger .section-subtitle {
