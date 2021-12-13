@@ -47,12 +47,11 @@ header {
   position: fixed;
   top: 0;
   width: 80px;
+  z-index: 7;
 }
 .header-nav {
   display: block;
   height: 100vh;
-  z-index: 7;
-  /* width: 80%; */
 }
 
 .nav-list {
@@ -71,7 +70,6 @@ header {
   display: block;
 }
 .menu_ticket {
-  /* height: 200px; */
   height: 300px;
   padding: 50px 0;
 }
@@ -109,21 +107,41 @@ header {
 .nav-hamburger {
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   left: -100%;
   background: #3a3a3a;
-  transition: 0.5s;
+  transition: 0.4s;
+  z-index: 5;
 }
 .nav-hamburger ul {
-  display: flex;
-  flex-wrap: wrap;
+  /* height: 90%; */
+  display: grid;
+  grid-template:
+    "left right"
+    "left right"
+    "left right"
+    "left right"
+    "left right"
+    "left right"
+  ;
 }
-.nav-hambureger ul li {
-  padding: 70px 0;
+.nav-left {
+  grid-area: left;
 }
+.nav-right {
+  grid-area: right;
+}
+
 .nav-hamburger .section-title,
 .nav-hamburger .section-subtitle {
   color: white;
+}
+.nav-hamburger .section-title {
+  font-size: 30px;
+  padding-bottom: 0;
+}
+.nav-hamburger .section-subtitle {
+  font-weight: bold;
 }
 
 .menu_line-top {
@@ -168,7 +186,7 @@ header {
 
 .new {
   position: fixed;
-  z-index: 8;
+  z-index: 3;
   bottom: 30px;
   right: 30px;
   /* box-shadow: 5px 10px 0 0 black; */
@@ -236,6 +254,8 @@ header {
 
 /* contents */
 
+/* contents 常時 */
+
 .contents {
   display: flex;
   justify-content: space-between;
@@ -243,13 +263,15 @@ header {
   padding-bottom: 105px;
 }
 .content {
+  /* display: block; */
   position: relative;
   margin-bottom: 30px;
   width: 350px;
   height: 350px;
   border-radius: 30px;
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2),
-    inset 0 0 200px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 00px rgba(0, 0, 0, 0.3),
+    inset 0 0 200px rgba(0, 0, 0, 0.4);
+  /* box-shadow: inset 0px -35px 77px -13px rgba(0, 0, 0, 0.3) ; */
 }
 .content img {
   width: 100%;
@@ -258,15 +280,18 @@ header {
   border-radius: 30px;
 }
 .content-texts {
+  display: block;
   position: absolute;
   bottom: 20%;
   left: 10%;
+  opacity: 1;
 }
 .content-title {
   color: white;
   font-size: 32px;
 }
 .content-text {
+  display: inline;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -276,18 +301,8 @@ header {
   color: #e60020;
   font-weight: bold;
 }
-.content:hover {
-  background-color: #519b60;
-  border-radius: 30px;
-  transition: 0.5s;
-  background-image: none;
-}
-.content-hover-texts {
-  display: none;
-}
-.content-hover-texts:hover {
-  display: static;
-}
+
+/* contents画像 */
 
 .content-gallery {
   background: url("../img/img_contents_gallery_mb.jpg");
@@ -307,6 +322,43 @@ header {
 .content-finding {
   background: url("../img/img_contents_app_mb.jpg") no-repeat;
 }
+
+/* contents hover時 */
+
+.hover-mask {
+  display: block;
+  max-width: 350px;
+  width: 80%;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  border-radius: 30px;
+  opacity: 0;
+}
+.hover-mask-title,
+.hover-mask-content {
+  color: white;
+  line-height: 1.5;
+}
+.hover-mask-title {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.content:hover {
+  background-color: #519b60;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  background-image: none;
+  /* transform: scale(1.1); */
+}
+.content-texts:hover {
+  opacity: 0;
+}
+.hover-mask:hover {
+  opacity: 1;
+}
+
+
 
 /* to stick img of map */
 
