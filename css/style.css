@@ -48,12 +48,12 @@ button:hover {
   background-color: #3a3a3a;
   transform: translate(-100%, 0);
   border-bottom: 1px solid currentColor;
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1)0.3s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
   /* transform-origin: 0 0; */
   content: "";
 }
 .underline:hover:after {
-  transform: translate(0,0);
+  transform: translate(0, 0);
   /* transform: scaleX(0); */
   transform-origin: 100% 0;
 }
@@ -129,6 +129,7 @@ header {
   height: 100vh;
   width: 100%;
   left: -100%;
+  padding-top: 5%;
   background: #3a3a3a;
   transition: 0.4s;
   z-index: 5;
@@ -332,6 +333,8 @@ header {
 }
 .content-store {
   background: url("../img/img_contents_store_mb.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .content-cafe {
   background: url("../img/img_contents_cafe_mb_2.jpg") center;
@@ -347,11 +350,12 @@ header {
 
 .hover-mask {
   display: block;
-  max-width: 350px;
-  width: 80%;
-  position: absolute;
+  /* width: 380px;
+  height: 380px; */
   bottom: 15%;
   left: 10%;
+  width: 80%;
+  position: absolute;
   border-radius: 30px;
   opacity: 0;
 }
@@ -372,11 +376,10 @@ header {
   box-shadow: none;
   /* transform: scale(1.1); */
 }
-.content-texts:hover {
+.content:hover .content-texts {
   opacity: 0;
-  display: none;
 }
-.hover-mask:hover {
+.content:hover .hover-mask {
   opacity: 1;
 }
 
